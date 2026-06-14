@@ -45,6 +45,6 @@ python eval.py                                  # run the benchmark + metrics
 ```
 
 ## Next steps (to go deeper)
-- Add an on-chain tool (gas price, wallet balance) — it auto-appears to the agent.
+- Add an on-chain tool (gas price, wallet balance), which auto-appears to the agent.
 - Add a real vector DB (Chroma/FAISS) behind rag.py.
 - Add adversarial eval cases (prompt injection in a headline) to test robustness.
