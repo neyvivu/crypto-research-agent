@@ -10,13 +10,13 @@ through the Model Context Protocol (MCP)**:
 Plus an **evaluation harness** that benchmarks accuracy, tool-use, and latency.
 
 ```
-            ┌──────────┐   discovers + calls tools   ┌──────────────┐
-question →  │ agent.py │ ──────────────────────────▶ │ mcp_server.py│
-            │ (Gemini) │ ◀──────── tool results ───── │  (FastMCP)   │
+            ┌──────────┐   discovers + calls tools    ┌──────────────┐
+question →  │ agent.py │ ─────────────────────────▶  │ mcp_server.py│
+            │ (Gemini) │ ◀──────── tool results ──── │  (FastMCP)   │
             └──────────┘                              └──────┬───────┘
-                                                            │
+                                                             │
                                   get_price / get_market_news / search_knowledge
-                                                            │
+                                                             │
                                        CoinGecko · RSS+VADER · RAG (rag.py)
 ```
 
