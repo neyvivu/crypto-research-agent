@@ -20,7 +20,7 @@ question →  │ agent.py │ ────────────────�
                                        CoinGecko · RSS+VADER · RAG (rag.py)
 ```
 
-## Get a free Gemini API key (no credit card)
+## Get a free Gemini API key
 1. Go to https://aistudio.google.com/apikey
 2. Sign in with Google → **Create API key** → copy it.
 3. Do NOT enable billing on the project — that removes the free tier.
@@ -48,9 +48,3 @@ python eval.py                                  # run the benchmark + metrics
 - Add an on-chain tool (gas price, wallet balance) — it auto-appears to the agent.
 - Add a real vector DB (Chroma/FAISS) behind rag.py.
 - Add adversarial eval cases (prompt injection in a headline) to test robustness.
-
-## Resume bullet (add only after it runs)
-> Built a crypto-research LLM agent (Gemini) with tool-use served over the **Model Context
-> Protocol (MCP)** — live market data, news-sentiment, and **semantic RAG** over a local
-> knowledge base — plus an **evaluation harness** scoring decision accuracy, tool-use, and
-> latency across a benchmark suite.
